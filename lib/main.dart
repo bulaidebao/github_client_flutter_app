@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Global.dart';
 
 void main() {
   runApp(MyApp());
