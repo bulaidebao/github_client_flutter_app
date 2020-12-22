@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:github_client_app/models/index.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'CacheObject.dart';
+import 'Git.dart';
 
 const _themes = <MaterialColor>[
 
@@ -16,11 +17,18 @@ const _themes = <MaterialColor>[
 
 class Global{
 
+  // 如果为true，则本次请求不使用缓存，但新的请求结果依然会被缓存
+  static String refreshFlagStr = 'refresh';
+
+  // 本次请求禁用缓存，请求结果也不会被缓存。
+  static String noCacheFlagStr = 'noCache';
+  static String cacheKeyFlagStr = 'cacheKey';
+
   static  SharedPreferences _prefs;
   static  Profile profile = Profile();
 
   // 网络缓存对象：并非第三方库，来自编者自建dart
-  // static NetCache netCache = NetCache();
+  static NetCache netCache = NetCache();
 
   // 可选的主体列表
   static List<MaterialColor> get themes => _themes;
