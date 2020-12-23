@@ -11,6 +11,7 @@ import 'package:flukit/flukit.dart';
 import 'package:github_client_app/models/index.dart';
 import 'package:github_client_app/widgets/RepoItem.dart';
 import 'package:github_client_app/widgets/MyDrawer.dart';
+import 'package:github_client_app/routes/loginRoute.dart';
 
 void main() {
 
@@ -76,11 +77,11 @@ class MyApp extends StatelessWidget {
             },
 
             // 注册命名路由表
-          //   routes: <String , WidgetBuilder>{
-          //     'login':(context) => LoginRoute(),
+            routes: <String , WidgetBuilder>{
+              'login':(context) => LoginRoute(),
           //     'themes':(context) => ThemeChangeRoute(),
           //     'language':(context) => LanguageRoute(),
-          // },
+            },
 
           );
         },
