@@ -12,6 +12,8 @@ import 'package:github_client_app/models/index.dart';
 import 'package:github_client_app/widgets/RepoItem.dart';
 import 'package:github_client_app/widgets/MyDrawer.dart';
 import 'package:github_client_app/routes/loginRoute.dart';
+import 'package:github_client_app/routes/LanguageRoute.dart';
+import 'package:github_client_app/routes/ThemeRoute.dart';
 
 void main() {
 
@@ -79,8 +81,8 @@ class MyApp extends StatelessWidget {
             // 注册命名路由表
             routes: <String , WidgetBuilder>{
               'login':(context) => LoginRoute(),
-          //     'themes':(context) => ThemeChangeRoute(),
-          //     'language':(context) => LanguageRoute(),
+              'themes':(context) => ThemeChangeRoute(),
+              'language':(context) => LanguageRoute(),
             },
 
           );
