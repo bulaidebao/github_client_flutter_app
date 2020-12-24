@@ -19,7 +19,7 @@ class LanguageRoute extends StatelessWidget{
 
         children: <Widget>[
           _buildLanguageItem('中文简体', 'zh_Hans_CN', context),
-          _buildLanguageItem('Englist', 'en_US', context),
+          _buildLanguageItem('English', 'en_US', context),
           _buildLanguageItem(gm.app_auto, null, context),
         ],
       ),
@@ -30,7 +30,6 @@ class LanguageRoute extends StatelessWidget{
 
     var color = Theme.of(context).primaryColor;
     var localeModel = Provider.of<LocaleModel>(context);
-    var gm = S.of(context);
 
     return ListTile(
       title: Text(

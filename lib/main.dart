@@ -5,7 +5,6 @@ import 'package:github_client_app/common/ProfileChangeNotifier.dart';
 import 'package:provider/provider.dart';
 import 'package:github_client_app/generated/l10n.dart';
 import 'package:github_client_app/generated/l10n.dart' as Smodule;
-import 'package:intl/intl.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flukit/flukit.dart';
 import 'package:github_client_app/models/index.dart';

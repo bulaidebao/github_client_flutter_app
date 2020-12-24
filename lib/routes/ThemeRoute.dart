@@ -9,6 +9,9 @@ class ThemeChangeRoute extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+
+    var themeModel = Provider.of<ThemeModel>(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(S.of(context).app_theme),
@@ -29,7 +32,7 @@ class ThemeChangeRoute extends StatelessWidget{
 
             onTap: (){
               // 主题更新后，MaterialApp会重新build
-              Provider.of<ThemeModel>(context).theme = e;
+              themeModel.theme = e;
             },
           );
         }).toList(),

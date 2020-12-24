@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:github_client_app/widgets/gmAvatar.dart';
 import 'package:provider/provider.dart';
-import 'package:github_client_app/models/index.dart';
 import 'package:github_client_app/common/ProfileChangeNotifier.dart';
 import 'package:github_client_app/generated/l10n.dart';
 

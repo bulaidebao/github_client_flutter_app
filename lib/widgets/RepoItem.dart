@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:github_client_app/models/index.dart';
 import 'gmAvatar.dart';
 import 'package:github_client_app/generated/l10n.dart';
-import '';
 
 class RepoItem extends StatefulWidget{
 
