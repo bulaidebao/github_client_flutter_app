@@ -61,6 +61,7 @@ class MyApp extends StatelessWidget {
               GlobalWidgetsLocalizations.delegate
             ],
             supportedLocales: S.delegate.supportedLocales,
+            locale: localeModel.getLocale(),
             localeListResolutionCallback: (List<Locale> locales, Iterable<Locale> supportedLocales) {
               if(localeModel.getLocale() != null){
                 //如果已选定语言,则不跟随系统

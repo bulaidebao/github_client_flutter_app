@@ -18,7 +18,7 @@ class LanguageRoute extends StatelessWidget{
       body: ListView(
 
         children: <Widget>[
-          _buildLanguageItem('中文简体', 'zh_Hans_CN', context),
+          _buildLanguageItem('中文简体', 'zh_CN', context),
           _buildLanguageItem('English', 'en_US', context),
           _buildLanguageItem(gm.app_auto, null, context),
         ],
