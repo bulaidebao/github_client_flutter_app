@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    /// 使用multiProvider，将ThemeModel，UserModel,LocaleModel三个模型暴露给所有页面，共享模型
     return MultiProvider(
 
       providers: [
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider.value(value: LocaleModel()),
       ],
 
+      /// 使用Consumer来监听全局刷新UI
       /// MaterialApp消费（依赖）了ThemeModel和LocaleModel，所以当APP主题或语言改变时MaterialApp会重新构建
       child: Consumer2<ThemeModel , LocaleModel>(
 
